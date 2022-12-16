@@ -14,6 +14,8 @@
         -moz-transform-origin:0 0;
         -o-transform-origin: 0 0;
         -webkit-transform-origin: 0 0;
+        /* max-width: 100%; */
+        overflow: hidden;
       }
 
       img {
@@ -39,6 +41,7 @@
         margin-top: -8px;
         margin-left: -8px;
         margin-right: -8px;
+        padding: 10px;
         
         
         
@@ -53,8 +56,8 @@
         border-style: solid;
         border-width: 5px;
 
-        align-items: center;
-        justify-content: center;
+        align-items: left;
+        justify-content: left;
         display: flex;
         flex-wrap: wrap;
        
@@ -113,7 +116,7 @@
 
       }
       .para1{
-
+        font-family: Georgia, 'Times New Roman', Times, serif;
         display: flex;
         margin-bottom: 0;
         margin-top: 0;
@@ -127,7 +130,30 @@
 
         font-size: 3vw;
       }
+      .para2{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: -8px;
+        margin-right: -8px;
+        border: solid;
 
+        border-color: black;
+        color:black;
+      
+        font-size: 2vw;
+        padding: 5px;
+        background-color: lightgrey;
+        border-bottom: 0px;
+        border-top: 0px;
+        background: rgb(133,165,166);
+        background: linear-gradient(0deg, rgba(133,165,166,1) 0%, rgba(66,154,154,1) 100%);
+          }
+
+        .right{
+          float: right;
+        }
     </style>
   </head>
 
@@ -140,19 +166,37 @@
     </h1>
 
    <h2 class = "directory"> 
-      <a href="https:www.linkedin.com/in/lukas-kelk-682bb722b" target="_blank" rel="noopener noreferrer"> <button class="button">|Linkedin|</button></a>
+      <a href="https://linkedin.com/in/lukas-kelk-682bb722b" target="_blank" rel="noopener noreferrer"> <button class="button">|Linkedin|</button></a>
       <a href="https://github.com/Lukas-k03" target="_blank" rel="noopener noreferrer" > <button class="button">|Github|</button> </a>
-      <a href="https:www.lukaskelk.com/RTDSW" target="_blank" rel="noopener noreferrer" > <button class="button">|Projects|</button> </a>
-      <a href="" target="_blank" rel="noopener noreferrer" > <button class="button">|Education|</button> </a>
-      <a href="" target="_blank" rel="noopener noreferrer" > <button class="button">|Skills|</button> </a>
-      <a href="" target="_blank" rel="noopener noreferrer" > <button class="button">|Activities|</button> </a>
+      <a href="https://lukaskelk.com/Projects" target="_blank" rel="noopener noreferrer" > <button class="button">|Projects|</button> </a>
+      <a href="https://lukaskelk.com/Resume" target="_blank" rel="noopener noreferrer" > <button class="button">|Resume|</button> </a>
+      <a href="" target="_blank" rel="noopener noreferrer" > <button class="button"></button> </a>
+      <a href="" target="_blank" rel="noopener noreferrer" > <button class="button"></button> </a>
+      <text></text>
    </h2>
 
    <h3 class="para1"> 
     <img src="me.JPEG" class = "png1" ALIGN = "top"> </img>
+    <text style="padding: 5px;">
     Hello! My name is Lukas Kelk, I go to Florida Polytechnic University.
      I'm currently obtaining a degree in Computer Engineering with a concentration in
      Digital Logic Design!
+    </text>
    </h3>
+
+   <h4 class="para2"> 
+    Education:
+        </br>
+          Florida Polytechnic University | Lakeland, Florida
+           <text class="right">
+              August 2021- Present
+           </text>
+        </br>
+          Bachelor of Science in Computer Engineering| GPA 4.0
+           <text class="right">
+            Expected Graduation 2025
+           </text>
+   </h4>
+
   </body>
 </html>
