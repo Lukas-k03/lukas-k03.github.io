@@ -1,122 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      .box {
-    float: center;
-    width: auto;
-    margin-left: auto;
-    margin-top: auto;
-    padding: 5px;
-    border: 2px solid blue;
-}
-      #rcorners1 {
-    margin-left:auto;
-    margin-right:auto;
-    border-radius: 50px;
-    background: rgba(211, 211, 211, 0.644);
-    padding: 15px;
-    width: 325px;
-    height: 75px;
-   }
-   #rcorn2PhotoDog {
-    margin-left:auto;
-    margin-right:auto;
-    border-radius: 50px;
-    background: rgba(211, 211, 211, 0.644);
-    padding: 15px;
-    width: 520px;
-    height: 620px;
-   }
-    img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    body {
-      background: rgb(34,193,195);
-      background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    
+   <style> 
+     .header {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 65px;
+
+        text-align: center;
+        color: aliceblue;
+        /* border-radius: 25px; */
+        background-image: url('headerBack.jpg');
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        border-bottom: 0px;
+
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        
+        
+     }
+
+     .directory {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: large;
+        background: rgb(133,165,166);
+        background: linear-gradient(0deg, rgba(133,165,166,1) 0%, rgba(66,154,154,1) 100%);
+        padding: 5px;
+        border-style: solid;
+        border-width: 5px;
+
+        margin-bottom: 0;
+        margin-top:0;
+        margin-right: 0;
+        margin-left: 0;
+     }
+     
+      .button {
+        border: none;
+        color: black;
+        background: #21ad9d;
+        padding: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        
+
+        margin-bottom: 0;
+        margin-top:0;
+        margin-right: 0;
+        margin-left: 0;
+
+        /* border-radius: 25px; */
+        border: solid;
+        border-color: ali;
+        
       }
+      .button:hover {
+         background-color: #2d80aa;
+         color: aliceblue;
+        }
 
-    h1 {
-    margin-left:auto;
-    margin-right:auto;
-    font: Georgia;
-    font-size: 30px;
-    text-align: center;
-    border: 5px solid white;
-    
-  
-    }
-    h2{
-      border: 5px solid white;
-      background-color: rgba(211, 211, 211, 0.644);
-      margin-left:auto;
-      margin-right:auto;
-    }
-
-
-    span {
-  height: 30px;
-  
-  margin-right: auto;
-  margin-left: auto;
-}
-.span1 {
-  background: red;
-  width: 350px;
-}
-.span2 {
-  background: blue;
-  width: 300px;
-}
-
-
-
-    p {
-    margin-left:auto;
-    margin-right:auto;
-    font: opensans;
-    font-size: 30px;
-    text-align: center;
-    border: 5px solid white;
-    
-  
-    }
-    p2 {
-    margin-left:auto;
-    margin-right:auto;
-    font: opensans;
-    font-size: 30px;
-    text-align: center;
-    border: 5px solid white;
-  
-    }
-
-  </style>
+    </style>
   </head>
-  <body>
-    <h1>
-      Hello world!
+
+  
+
+<body style = "background: rgb(14, 70, 72);">
+  
+    <h1 class = "header">
+     Lukas Kelk
     </h1>
 
-    <p2 id= "rcorners1">
-      Welcome to my Website!
-    </p2>
+   <h2 class = "directory"> 
+      <a href="https:www.linkedin.com/in/lukas-kelk-682bb722b/" target="_blank" rel="noopener noreferrer"> <button class="button">|Linkedin|</button></a>
+      <a href="https://github.com/Lukas-k03" target="_blank" rel="noopener noreferrer" > <button class="button">|Github|</button> </a>
+      <a href="https:www.lukaskelk.com/RTDSW" target="_blank" rel="noopener noreferrer" > <button class="button">|Real Time Digital Stop Watch|</button> </a>
+   </h2>
 
-    <p2 id= "rcorners1">
-      I Go To Florida Polytechnic University!
-    </p2>
 
-    <h2 id="rcorn2PhotoDog">
-      <img src="ginger.jpg" style="width:500px;height:600px;"/>
-    </h2>
-    
-    <p id= "rcorners1">
-      This Is My 
-      <a href="https://www.linkedin.com/in/lukas-kelk-682bb722b/">
-      Linkedin </a> 
-    </p>
-    
+
+
+
+
+
   </body>
 </html>
