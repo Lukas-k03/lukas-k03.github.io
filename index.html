@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Lukas Kelk Website</title>
   <head>
     
    <style>
@@ -8,10 +9,7 @@
       body{
         margin-left: auto;
         margin-right:  auto;
-        max-width: 950px
-
-        
-        
+        max-width: 95%;
       }
 
       img {
@@ -25,25 +23,22 @@
         font-size: 65px;
 
         text-align: center;
-        color: aliceblue;
+        text-shadow: 5px;
+        color: #d0efff;
         /* border-radius: 25px; */
-        background-image: url('headerBack.jpg');
+        background-image: url('headerBack2.jpg');
+        background-size: 50%;
         border-style: solid;
         border-width: 5px;
         border-color: black;
         border-bottom: 0px;
 
         margin-bottom: 0;
-        margin-top: -8px;
+        margin-top: 0;
         margin-left: -8px;
         margin-right: -8px;
         padding: 10px;
 
-
-        
-        
-        
-        
      }
 
      
@@ -68,7 +63,7 @@
       .button {
         border: none;
         color: black;
-        background: #21ad9d;
+        background: #2a9df4;
         padding: 15px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: center;
@@ -87,8 +82,8 @@
       }
 
         .button:hover {
-          background-color: #2d80aa;
-          color: aliceblue;
+          background-color: #187bcd;
+          color: #d0efff
          }
       
       .png1{
@@ -99,8 +94,8 @@
         text-align: center;
         align-items: center;
 
-        color: aliceblue;
-        border-radius: 25px;
+        color: #d0efff;
+        /* border-radius: 25px; */
 
         display: block;
 
@@ -126,9 +121,9 @@
         border: solid;
 
         border-color: black;
-        color:aliceblue;
+        color:#d0efff;
         word-wrap: normal;
-        background: rgb(14, 70, 72);
+        background: #187bcd;
         font-size: 2.5vw;
       }
 
@@ -144,7 +139,7 @@
         border-color: black;
         color:black;
       
-        font-size: 2vw;
+        /* font-size: 2vw; */
         padding: 5px;
         background-color: lightgrey;
         /* border-bottom: 0px;
@@ -161,11 +156,10 @@
 
   
 
-<body style = "background: rgb(240,240,255);
-background: radial-gradient(circle, rgba(240,240,255,1) 0%, rgba(9,120,121,0.4273504273504274) 15%, rgba(2,0,36,1) 100%);">
+<body style = "background:#03254c">
   
     <h1 class = "header">
-     Lukas Kelk
+     <text style = "background-color: rgb(5, 9, 81); border-radius: 15px; padding: 5px;">Lukas Kelk</text>
     </h1>
 
    <!-- <h2 class = "directory"> 
@@ -179,41 +173,27 @@ background: radial-gradient(circle, rgba(240,240,255,1) 0%, rgba(9,120,121,0.427
    </h2> -->
 
    <h3 class="para1"> 
-    <img src="me.JPEG" class = "png1" ALIGN = "top"> </img>
-    <text style="padding: 5px;">
-    Hello! My name is Lukas Kelk, I go to Florida Polytechnic University.
-     I'm currently obtaining a degree in Computer Engineering with a concentration in
-     Digital Logic Design!
-    </text>
-    <text style="max-width: 100%;">
+   
+    <img src="me.JPEG" class = "png1"> </img>
+    <div>
+      <text style="padding: 5px; padding-bottom: 0; color: antiquewhite; display: flex;">
+        std :: string aboutMe() {
+      </text>
+      <text style="padding: 5px; display: flex;"> return "Hello! My name is Lukas Kelk, I go to Florida Polytechnic University.
+         I'm currently obtaining a degree in Computer Engineering with a concentration in
+         Digital Logic Design!";
+      </text>
+      <text style="padding: 5px; padding-top: 0; color: antiquewhite; display: flex;">
+        }
+      </text>
+    </div>
+
+    <text style="max-width: 100%;" ALIGN = "bottom">
       <a href="https://linkedin.com/in/lukas-kelk-682bb722b" target="_blank" rel="noopener noreferrer"> <button class="button">|Linkedin|</button></a>
       <a href="https://github.com/Lukas-k03" target="_blank" rel="noopener noreferrer" > <button class="button">|Github|</button> </a>
       <a href="https://lukaskelk.com/Projects" target="_blank" rel="noopener noreferrer" > <button class="button">|Projects|</button> </a>
       <a href="LukasKelkResume.pdf" target="_blank" rel="noopener noreferrer" > <button class="button">|Resume|</button> </a>
-     
    </text>
-    </h3>
 
-   <h4 class="para2"> 
-    Education:
-        </br>
-          Florida Polytechnic University | Lakeland, Florida
-           <text class="right">
-              August 2021- Present
-           </text>
-        </br>
-          B.S Computer Engineering | GPA 4.0
-           <text class="right">
-            Expected Graduation 2025
-           </text>
-   </h4>
-
-   <h5 class = "para2">
-    Projects: (See more via Projects tab)
-   </br>
-    Real Time Digital Stopwatch (Verilog/FPGA)
-   </br>
-    Library Management System (C++)  
-   </h5>
-  </body>
-</html>
+  </h3>
+  
