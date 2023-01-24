@@ -25,6 +25,8 @@
     
       }
 
+  
+
      .header {
         font-size: 65px;
 
@@ -59,25 +61,33 @@
         margin-left: -8px;
 
         text-align: center;
+        width:100%;
+        
 
-        
-        
+        display:flexbox;
+        justify-content: row;
+
      }
      
       .button {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         border: none;
         color: black;
         background: #2a9df4;
-        padding: 15px;
-      
+    
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
         text-align: center;
-        font-size: 16px;
+        font-size: 2vw;
         word-wrap: normal;
         cursor: pointer;
-        margin:auto;
+        
         border: solid;
-        width: 200px;
+        width: 18vw;
 
+        display: flexbox;
+        justify-content: row;
 
         border-radius: 10px;
       
@@ -162,11 +172,11 @@
       
     <div class = "directory">
       <text style="padding-top: 5px;">
-         <a href="https://linkedin.com/in/lukas-kelk-682bb722b" target="_blank" rel="noopener noreferrer"> <button class="button">|Linkedin|</button></a>
-         <a href="https://github.com/Lukas-k03" target="_blank" rel="noopener noreferrer" > <button class="button">|Github|</button> </a>
-         <a href="https://lukaskelk.com/Projects" target="_blank" rel="noopener noreferrer" > <button class="button">|Projects|</button> </a>
-         <a href="LukasKelkResume.pdf" target="_blank" rel="noopener noreferrer" > <button class="button">|Resume|</button> </a>
-         <a href="https://instagram.com/kelkmusic?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer" > <button class="button">|Music|</button> </a>
+         <a href="https://linkedin.com/in/lukas-kelk-682bb722b" target="_blank" rel="noopener noreferrer"> <button class="button"data-inline = "true";>|Linkedin|</button></a>
+         <a href="https://github.com/Lukas-k03" target="_blank" rel="noopener noreferrer" > <button class="button"data-inline = "true";>|Github|</button> </a>
+         <a href="https://lukaskelk.com/Projects" target="_blank" rel="noopener noreferrer" > <button class="button"; data-inline = "true";>|Projects|</button> </a>
+         <a href="LukasKelkResume.pdf" target="_blank" rel="noopener noreferrer" > <button class="button"data-inline = "true";>|Resume|</button> </a>
+         <a href="https://instagram.com/kelkmusic?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer" > <button class="button"data-inline = "true";>|Music|</button> </a>
       </text>
       </div>
 
