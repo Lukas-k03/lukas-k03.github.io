@@ -1,0 +1,100 @@
+.navBar{
+  font-size: 3.5vw;
+  color: aliceblue;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.part1{
+background-color:#23395d;
+clear: both;
+margin-left: -8px;
+margin-right:-8px;
+display: flex;
+padding-bottom: 100%;
+}
+
+.part1Text{
+  color:aliceblue;
+  padding:15px;
+  margin-left: 5%;
+}
+
+.png1{
+  display: flex;
+  padding-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.textPart2{
+text-align: center;
+color:aliceblue;
+font-size: 4vw;
+padding-bottom: 4vw;
+}
+
+.sText2{
+background-color:#1c2e4a;
+border-radius: 10px;
+margin:auto;
+display: flex;
+width: fit-content;
+padding: 15px;
+border: .25vw solid aliceblue;
+}
+
+  button{
+      font-family: CustomFont;
+      background: transparent;
+      border-color: transparent;
+      font-size: 3vw;
+      cursor: pointer;
+      color: aliceblue;
+      margin-left: auto;
+      margin-right:auto;
+      }
+
+    button:hover{
+    /* padding: 10px; */
+    color: aquamarine;
+    }
+
+    button:after{
+    content:')';
+    opacity: 0;
+    color:aqua;
+    }
+
+    button:before{
+    content:'(';
+    opacity: 0;
+    color:aqua;
+    }
+
+    button:hover:after {
+      opacity: 1;
+      color: aqua;
+    }
+
+    button:hover:before {
+      opacity: 1;
+      color: aqua;
+    }
+
+
+body{
+  background-color:#152238;
+  font-family: CustomFont;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: CustomFont;
+  src: url("font2.ttf");
+  }
+
+
