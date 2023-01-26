@@ -13,7 +13,8 @@ clear: both;
 margin-left: -8px;
 margin-right:-8px;
 display: flex;
-padding-bottom: 100%;
+margin-top: auto;
+padding-bottom: 20vw;
 }
 
 .part1Text{
@@ -27,7 +28,7 @@ padding-bottom: 100%;
   padding-top: 1%;
   margin-left: auto;
   margin-right: auto;
-  
+  object-fit: fill;
 }
 
 .textPart2{
