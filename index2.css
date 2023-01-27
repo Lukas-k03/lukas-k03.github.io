@@ -1,38 +1,28 @@
-.top{
-padding-bottom: 4vw;
-}
+
 .navBar{
+  display: flex;
   font-size: 35px;
   color: aliceblue;
   display: flex;
   padding: 10px;
   justify-content: center;
-  padding-bottom: 5px;
+  padding-bottom: 3vw;
+
 }
 
 .part1{
 background-color:#23395d;
 clear: both;
 margin-left: -8px;
-margin-right:-8px;
-display: flex;
-margin-top: auto;
-padding-bottom: 20vw;
-}
-
-.part1Text{
-  color:aliceblue;
-  padding:15px;
-  margin-left: 5%;
+margin-right: -8px;
 }
 
 .png1{
   display: flex;
-  padding-top: 1%;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-
-  padding-bottom: 0%;
+  padding-top: 1%;
 }
 
 .textPart2{
@@ -56,13 +46,9 @@ border: .25vw solid aliceblue;
       font-family: CustomFont;
       background: transparent;
       border-color: transparent;
-      font-size: 3vw;
+      font-size: 4vw;
       cursor: pointer;
       color: aliceblue;
-      margin-left: auto;
-      margin-right:auto;
-      padding-right: max(4vw, 5%);
-      padding-left: max(4vw, 5%);
       }
 
     button:hover{
@@ -108,5 +94,4 @@ body{
     img {
     width: 50%;
     }
-    body{background-color: orange;}
-    }
+  }
