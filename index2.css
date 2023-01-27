@@ -1,5 +1,8 @@
+.top{
+padding-bottom: 4vw;
+}
 .navBar{
-  font-size: 3.5vw;
+  font-size: 35px;
   color: aliceblue;
   display: flex;
   padding: 10px;
@@ -28,13 +31,14 @@ padding-bottom: 20vw;
   padding-top: 1%;
   margin-left: auto;
   margin-right: auto;
-  object-fit: fill;
+
+  padding-bottom: 0%;
 }
 
 .textPart2{
 text-align: center;
 color:aliceblue;
-font-size: 4vw;
+font-size: 35px;
 padding-bottom: 4vw;
 }
 
@@ -57,6 +61,8 @@ border: .25vw solid aliceblue;
       color: aliceblue;
       margin-left: auto;
       margin-right:auto;
+      padding-right: max(4vw, 5%);
+      padding-left: max(4vw, 5%);
       }
 
     button:hover{
@@ -98,4 +104,9 @@ body{
   src: url("font2.ttf");
   }
 
-
+  @media only screen and (max-width: 480px) {
+    img {
+    width: 50%;
+    }
+    body{background-color: orange;}
+    }
