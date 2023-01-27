@@ -13,16 +13,33 @@
 .part1{
 background-color:#23395d;
 clear: both;
-margin-left: -8px;
-margin-right: -8px;
+margin-left: auto;
+margin-right: auto;
+display: inline-flex;
+bottom: 0;
+height: 60%;
+width: fit-content;
+}
+
+.textbottom{
+  flex: 1;
+  text-align: center;
+  color:aliceblue;
+  font-size: 3vw;
+  
+  justify-content: center;
+  width:100%;
+
 }
 
 .png1{
-  display: flex;
-  justify-content: center;
+  
+  flex:1;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1%;
+  object-fit: cover;
+  max-height: 100vh;
 }
 
 .textPart2{
@@ -41,6 +58,7 @@ width: fit-content;
 padding: 15px;
 border: .25vw solid aliceblue;
 }
+
 
   button{
       font-family: CustomFont;
@@ -95,3 +113,11 @@ body{
     width: 50%;
     }
   }
+
+#bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    
+}
