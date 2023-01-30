@@ -4,9 +4,11 @@
   font-size: 35px;
   color: aliceblue;
   display: flex;
-  padding: 10px;
+  margin: auto;
   justify-content: center;
   padding-bottom: 3vw;
+  padding-top: 3vw;
+
 
 }
 
@@ -17,36 +19,43 @@ margin-left: auto;
 margin-right: auto;
 display: inline-flex;
 bottom: 0;
-height: 60%;
-width: fit-content;
+flex-direction:row;
 }
+
+.all{
+  height: 100%;
+}
+
 
 .textbottom{
   flex: 1;
   text-align: center;
   color:aliceblue;
   font-size: 3vw;
+  padding: 15px;
   
-  justify-content: center;
-  width:100%;
 
+}
+.textBottomBord{
+  border: .25vw solid aliceblue;
+  border-radius: 10px;
+  background-color: #1c2e4a;
+  padding:5%;
 }
 
 .png1{
-  
-  flex:1;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1%;
-  object-fit: cover;
-  max-height: 100vh;
+  object-fit:scale-down;
+  padding:1vw;
+  padding-bottom: 0%;
 }
 
 .textPart2{
 text-align: center;
 color:aliceblue;
 font-size: 35px;
-padding-bottom: 4vw;
+
 }
 
 .sText2{
@@ -100,7 +109,8 @@ border: .25vw solid aliceblue;
 body{
   background-color:#152238;
   font-family: CustomFont;
-  overflow: hidden;
+  overflow:hidden;
+  height: 100%;
 }
 
 @font-face {
@@ -108,16 +118,14 @@ body{
   src: url("font2.ttf");
   }
 
-  @media only screen and (max-width: 480px) {
-    img {
-    width: 50%;
-    }
-  }
 
 #bottom {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0; 
     right:0;
+    height: 60%;
+    width: 100%;
+
     
 }
