@@ -12,6 +12,7 @@
 
 }
 
+
 .part1{
 background-color:#23395d;
 clear: both;
@@ -29,32 +30,31 @@ flex-direction:row;
 
 .textbottom{
   flex: 1;
-  text-align: center;
   color:aliceblue;
-  font-size: 3vw;
-  padding: 15px;
-  
-
+  font-size: 2vw;
+  padding: 4vw;
+  height: 100%;
 }
-.textBottomBord{
+/* .textBottomBord{
   border: .25vw solid aliceblue;
   border-radius: 10px;
   background-color: #1c2e4a;
-  padding:5%;
-}
+  padding:3vw;
+} */
 
 .png1{
-  margin-left: auto;
-  margin-right: auto;
   object-fit:scale-down;
   padding:1vw;
   padding-bottom: 0%;
+  height: 100%;
+  width: 100%;
+  
 }
 
 .textPart2{
 text-align: center;
 color:aliceblue;
-font-size: 35px;
+font-size: 3vw;
 
 }
 
