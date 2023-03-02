@@ -54,6 +54,7 @@ width: fit-content;
 padding: 15px;
 
 }
+.deskButton{font-size: 4vw;}
 
  .bottomText{
   flex: 1;
@@ -71,7 +72,6 @@ border: .25vw solid aliceblue;
       font-family: CustomFont;
       background: transparent;
       border-color: transparent;
-      font-size: 4vw;
       cursor: pointer;
       color: aliceblue;
       }
@@ -131,13 +131,48 @@ body{
   right:auto;
 }
 
-@media screen and (max-width: 400px) {
-  .png1 {
-    position:inherit;
-    left: auto;
-    right:auto;
-  }
-  .navBar{
-    display:inline-flex;
-  }
+.Mobile{
+  display:none}
+.Desktop{
+  display:block}
+
+@media (max-width:500px){
+.Desktop {
+    display:none}
+.Mobile {
+    display:flex;
+    flex-wrap: wrap;
+  overflow: hidden;}
+}
+
+.mobileButton{
+  left: auto;
+  right: auto;
+  padding-top: 10vw;
+  padding-bottom: 6vw;
+  
+}
+.mBut{font-size: 10vw;}
+.mTexttop{
+ color:aliceblue;
+  font-size: 10vw;
+  flex: 1;
+}
+.mImg{
+ 
+  padding-top: 10%;
+  position: absolute;
+  bottom: 10%;
+  left: auto;
+  right: auto;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+}
+.mImg1{
+  width: 97%;
+  height: auto;
+  object-fit:cover;
+  
+ 
 }
