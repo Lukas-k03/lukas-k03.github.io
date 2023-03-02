@@ -157,8 +157,11 @@ body{
  color:aliceblue;
   font-size: 10vw;
   flex: 1;
-  height: 50%;
+
+
 }
+.topstuff{ position: absolute;
+bottom: 75%;}
 .mImg{
  
   padding-top: 10%;
