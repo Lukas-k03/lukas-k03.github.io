@@ -156,7 +156,9 @@ body{
 }
 .mBut{font-size: 10vw;
   padding-left: 0;
-  padding-right: 0;}
+  padding-right: 0;
+  flex:50%;
+}
 .mTexttop{
  color:aliceblue;
   font-size: 10vw;
@@ -165,11 +167,13 @@ body{
 
 }
 .topstuff{ position: absolute;
-bottom: 65%;}
+bottom: 65%;
+display:flex;
+flex-wrap: wrap;
+}
 .mImg{
- 
-  
   position: absolute;
+  top:auto;
   bottom: 0;
   left: auto;
   right: auto;
