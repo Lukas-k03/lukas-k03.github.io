@@ -150,9 +150,13 @@ body{
   right: auto;
   padding-top: 10vw;
   padding-bottom: 6vw;
+  padding-left: 0;
+  padding-right: 0;
   
 }
-.mBut{font-size: 10vw;}
+.mBut{font-size: 10vw;
+  padding-left: 0;
+  padding-right: 0;}
 .mTexttop{
  color:aliceblue;
   font-size: 10vw;
