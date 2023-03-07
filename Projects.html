@@ -1,4 +1,24 @@
 <!DOCTYPE html>
-  <script>
-    
-  </script>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type = "text/css" href="index2.css"/>
+<body>
+
+ <a href="https://lukaskelk.com" target="_blank" rel="noopener noreferrer"><button class="projectButton"><---- Back To Home Page</button></a>
+ 
+ <div class="Project1">
+  <p class="p1Text">Real-Time Digital Stopwatch: Programed In Verilog for FPGA</p>
+    <div class = "projectBody">In this project we used our total knowledge gained from the duration of the course to design a Real Time Digital Stopwatch. This Watch features a start stop button which starts and pauses the timer and one reset switch which resets the time. The stopwatch has 4 main components.
+      <p>The 4-Bit RCA (Ripple Carry Adder) adds 1 bit to a 4-bit number. This part is essential to the timer because it is the main part that increments the timer. When the clock triggers the positive rising edge the 4-bit RCA is allowed to add one to the current 4-bit number in its input. This incrementing of one is what gives us the incrementing of one second on the timer. This 4-bit number can be converted to decimal to represent its corresponding value.</p> 
+      <p> second main component is the BCD_Display module. This module takes a 4-bit BCD number and decodes it to be allowed to be displayed on a seven-segment display. The exact Boolean algebra can be found in the BCD_Display module. </p>
+      <p>The Third and Fourth Main component of this project is the count10 and count6 Modules. These modules are made up of a few parts: A combination of 4 D Flip-Flops and the 4-bit RCA. Basically, the way it works is the 4xDFF gets an initial output of 4’b 0000. This is the input to the 4-bit RCA and incremented by one to become 4’b 0001 (output of 4-bit RCA). The output of the 4xDff is also sent to the BCD to Seven segment decoder to display the corresponding number on the display.  The output of 4-bit RCA is sent to the input of the 4xDFF and the cycle continues. Every time the 4xDFF outputs a 4-bit number (memory) is checked to see if it equals 9, as the 7-segment display cannot equal 9. If it equals 9 it resets the count back to zero (4’b0000). This reset can also be triggered manually from the ‘user’ making reset 1. The count6 is pretty much the same except the if statement is for if the bit is 6. In my specific project, I made modules that display each of the individual displays (One Display), so my code has 4 functions in the top-level entity. These One Display modules basically take care of each display, it is easier to see and more organized than having the individual count 4xdff and RCA counters all In the top level entity.</p>
+       </div>
+ </div>
+</body>
+
+
+
+
+
+
+</html>

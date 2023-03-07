@@ -40,7 +40,7 @@ padding: 5%;
 .textPart2{
 text-align: center;
 color:aliceblue;
-font-size: 3vw;
+font-size:calc(12px + 3vw);
 display: flex;
 padding-bottom: 10%;
 }
@@ -54,7 +54,7 @@ width: fit-content;
 padding: 15px;
 
 }
-.deskButton{font-size: 4vw;}
+.deskButton{font-size:calc(12px + 3vw)}
 
  .bottomText{
   flex: 1;
@@ -70,10 +70,11 @@ border: .25vw solid aliceblue;
 
   button{
       font-family: CustomFont;
+      color: aliceblue;
       background: transparent;
       border-color: transparent;
       cursor: pointer;
-      color: aliceblue;
+      
       }
 
     button:hover{
@@ -188,4 +189,24 @@ justify-content: center;
   object-fit:cover;
   
  
+}
+.projectButton{
+ font-size:calc(12px + 2vw);
+  padding: 1%;
+}
+.p1Text{
+  font-family: CustomFont;
+  color: aliceblue;
+  padding: 1%;
+  font-size:calc(12px + 1.5vw);
+}
+.projectBody{
+background-color:#1c2e4a;
+border-radius: 10px;
+margin:auto;
+border: .25vw solid aliceblue;
+width: 100%;
+}
+.project1{
+  width: 100%;
 }
