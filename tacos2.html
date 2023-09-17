@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+    div{
+      display: grid;
+      place-items: center;
+    }
+    .rotate {
+      animation: rotation 5s infinite linear;
+      scale: 48%;
+    }
+    
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+    body{
+      background-image:url('tacotimebackground.gif');
+      background-position: center center;
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+background-size: cover;
+background-color: #464646;
+    min-height: 100vh;
+    overflow: hidden;
+    
+    }
+    .centerIMG{
+      scale: 50%;
+      position: absolute;
+      
+    }
+  .bigBox{
+    height: 100vh;
+  }
+  @media (max-width:500px){
+    .centerIMG {
+        scale: 80%;}
+    .rotate{
+      scale: 78%;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="bigBox">
+    
+  <div>
+  
+  <img src="IMG-2235.JPG" class ="centerIMG">
+  <div></div>
+  <img src="tacotime.png" class="rotate">
+  </div>
+  </div>
+</body>
+</html>
