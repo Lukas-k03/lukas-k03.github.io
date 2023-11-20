@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .header{
+      font-size: 10vw;
+      font-family: 'Brush Script MT', cursive;
+      text-align: center;
+      color: azure;
+  
+    }
+    .button{
+      font-size: 5vw;
+      padding-top: 5vw;
+      text-align: center;
+      font-family: 'Brush Script MT';
+      
+    }
+
+    body{
+      background-image: url('background.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: darkslategray;
+    }
+  
+    button{
+      font-family: 'Brush Script MT';
+      color: whitesmoke;
+      background: transparent;
+      border-color: transparent;
+      cursor: pointer;
+      font-size: 5vw;
+      
+      }
+      button:hover{
+        /* padding: 10px; */
+        color: aquamarine;
+        }
+    
+        button:after{
+        content:')';
+        opacity: 0;
+        color:aqua;
+        }
+    
+        button:before{
+        content:'(';
+        opacity: 0;
+        color:aqua;
+        }
+    
+        button:hover:after {
+          opacity: 1;
+          color: aqua;
+        }
+    
+        button:hover:before {
+          opacity: 1;
+          color: aqua;
+        }
+  
+
+  </style>
+  <body> 
+    <div class="header"> Lukaskelk.com/reviews </div>
+    <div class="button">
+      <button>Food</button>
+      <button>Friend</button>
+      <button>Events</button>
+    </div>
+  </body>
+</html>
