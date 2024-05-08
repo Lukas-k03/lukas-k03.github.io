@@ -1,0 +1,213 @@
+
+.navBar{
+  display:flex;
+  font-size: 35px;
+  color: aliceblue;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 3vw;
+  padding-top: 2vw;
+  width: 100%;
+}
+
+
+.part1{
+background-color:#23395d;
+clear: both;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+bottom: 0;
+flex-direction:row;
+align-items: center;
+justify-content: center;
+}
+
+.all{
+  height: 100%;
+}
+
+.png1{
+  object-fit:scale-down;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+padding: 5%;
+  display: flex;
+  flex: 1;
+}
+
+.textPart2{
+text-align: center;
+color:aliceblue;
+font-size:calc(12px + 3vw);
+display: flex;
+padding-bottom: 10%;
+}
+
+.sText2{
+background-color:#1c2e4a;
+border-radius: 10px;
+margin:auto;
+border: .25vw solid aliceblue;
+width: fit-content;
+padding: 15px;
+
+}
+.deskButton{font-size:calc(12px + 3vw)}
+
+ .bottomText{
+  flex: 1;
+ }
+img{
+border: .25vw solid aliceblue;
+}
+ h1{
+    color: aliceblue;
+    font-size: 2.5vw;
+    
+ }
+
+  button{
+      font-family: CustomFont;
+      color: aliceblue;
+      background: transparent;
+      border-color: transparent;
+      cursor: pointer;
+      
+      }
+
+    button:hover{
+    /* padding: 10px; */
+    color: aquamarine;
+    }
+
+    button:after{
+    content:')';
+    opacity: 0;
+    color:aqua;
+    }
+
+    button:before{
+    content:'(';
+    opacity: 0;
+    color:aqua;
+    }
+
+    button:hover:after {
+      opacity: 1;
+      color: aqua;
+    }
+
+    button:hover:before {
+      opacity: 1;
+      color: aqua;
+    }
+
+
+body{
+  background-color:#152238;
+  font-family: CustomFont;
+  overflow:hidden;
+  height: 100%;
+}
+
+@font-face {
+  font-family: CustomFont;
+  src: url("font2.ttf");
+  }
+
+
+#bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right:0;
+    height: 60%;
+    width: 100%;
+}
+#center{
+  position:relative;
+  left: auto;
+  right:auto;
+}
+
+.Mobile{
+  display:none}
+.Desktop{
+  display:block}
+
+@media (max-width:500px){
+.Desktop {
+    display:none}
+.Mobile {
+    display:flex;
+    flex-wrap: wrap;
+  overflow: hidden;}
+}
+
+.mobileButton{
+ justify-content: center;
+ margin-left: 2.5vw;
+  padding-top: 10vw;
+  padding-bottom: 6vw;
+  
+}
+.mBut{font-size: 10vw;
+  padding-left: 0;
+  padding-right: 0;
+  flex:50%;
+  justify-content: center;
+  
+}
+.mTexttop{
+ color:aliceblue;
+  font-size: 10vw;
+  flex: 1;
+  justify-content: center;
+
+}
+.topstuff{ position: absolute;
+bottom: 65%;
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.mImg{
+  position: absolute;
+  top:auto;
+  bottom: 0;
+  left: auto;
+  right: auto;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+}
+.mImg1{
+  width: 97%;
+  height: auto;
+  object-fit:cover;
+  
+ 
+}
+.projectButton{
+ font-size:calc(12px + 2vw);
+  padding: 1%;
+}
+.p1Text{
+  font-family: CustomFont;
+  color: aliceblue;
+  padding: 1%;
+  font-size:calc(12px + 1.5vw);
+}
+.projectBody{
+background-color:#1c2e4a;
+border-radius: 10px;
+margin:auto;
+border: .25vw solid aliceblue;
+width: 100%;
+}
+.project1{
+  width: 100%;
+}
+.p1SubText{}
