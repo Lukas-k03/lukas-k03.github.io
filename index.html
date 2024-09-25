@@ -1,73 +1,199 @@
 <!DOCTYPE html>
-<!-- saved from url=(0070)file:///C:/Users/lukas/Documents/GitHub/lukas-k03.github.io/index.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./index_files/index2.css"> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lukas Kelk - Personal Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #1a2a43;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      overflow: hidden; /* Prevent scrolling */
+    }
 
-<title>Lukas Kelk</title>
+    html, body {
+      height: 100%; /* Ensure full height */
+    }
 
+    .navbar {
+      background-color: transparent;
+    }
 
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-size: 1.5rem; /* Increased font size */
+      transition: color 0.3s ease-in-out;
+    }
 
+    .navbar-nav .nav-link:hover {
+      color: #00e7ff !important;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 10px;
+      background: linear-gradient(to bottom, #2d3a58, #1a2a43);
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      border: 2px solid white;
+      padding: 5px 30px;
+      display: inline-block;
+      color: white;
+      transition: transform 0.3s;
+    }
+
+    .hero h1:hover {
+      transform: scale(1.05);
+      color: #00e7ff;
+      border-color: #00e7ff;
+    }
+
+    /* Info Section */
+    .info-section {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center items horizontally */
+      justify-content: center; /* Center items vertically */
+      height: 70vh; /* Adjusted height for better fit */
+      padding: 20px; /* Added padding */
+      gap: 20px; /* Space between items */
+    }
+
+    .info-section img {
+      width: 300px; /* Reduced size to prevent clipping */
+      height: 400px; /* Adjusted to maintain rectangular shape */
+      object-fit: cover;
+      border-radius: 10px; /* Rounded corners */
+      border: 4px solid white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .info-section img:hover {
+      transform: rotate(5deg) scale(1.05);
+      border-color: #00e7ff;
+    }
+
+    /* Visitor Counter */
+    .visitor-counter {
+      background-color: rgba(19, 29, 47, 0.9); /* Semi-transparent background */
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transition: background-color 0.3s;
+    }
+
+    .visitor-counter:hover {
+      background-color: rgba(0, 231, 255, 0.7); /* Change color on hover */
+    }
+
+    /* Cookie Game Button */
+    .cookie-game-btn {
+      background-color: #00e7ff; /* Button color */
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 10px; /* Added margin to move the button up */
+    }
+
+    .cookie-game-btn:hover {
+      background-color: #0091a0; /* Darker on hover */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #131d2f;
+      color: #aaa;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
 </head>
-  <body>
-    <div class="Desktop">
-    <div class="top">
-      <div class="navBar">
-      <a href="https://linkedin.com/in/lukas-kelk-682bb722b" target="_blank" rel="noopener noreferrer"> 
-        <button class="deskButton">Linkedin</button></a>
+<body>
 
-      <a href="https://github.com/Lukas-k03" target="_blank" rel="noopener noreferrer"> 
-        <button class="deskButton">Github</button> </a>
-
-      <a href="https://lukaskelk.com/Projects" target="_blank" rel="noopener noreferrer">
-       <button class="deskButton">Projects</button> </a>
-
-      <a href="LukasKelkResume.pdf" target="_blank" rel="noopener noreferrer"> 
-        <button class="deskButton">Resume</button> </a>
-
-      <a href="https://instagram.com/kelkmusic?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer"> 
-        <button class="deskButton">Music</button> </a> 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/lukas-kelk/">Linkedin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Lukas-k03">Github</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/oldfiles/LukasKelkResume.pdf">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Music</a>
+        </li>
+      </ul>
     </div>
-    </div>
+  </div>
+</nav>
 
-    <div class="textPart2"><p class="sText2">Hi! I'm Lukas Kelk</p></div>
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Hi! I'm Lukas Kelk</h1>
+</section>
 
-    <div id="bottom" class="part1">
-      <div class="bottomText" style="padding-left:3%;"><h1>I'm a Junior Florida Polytechnic University</h1></div>
-       <div class="png1">
-       <img src="./index_files/me.jpg">
-      </div>
-      <div class="bottomText" style="padding-right:3%;"><h1>I'm currently obtaining a degree in Computer Engineering with a concentration in Digital Logic Design!</h1></div>
-      </div>
-    </div>
+<!-- Info Section -->
+<section class="info-section container">
+  <div>
+    <img src="oldfiles/me.jpg" alt="Lukas Kelk Image">
+  </div>
+  <div class="visitor-counter">
+    Visitors: <span id="visitorCount">0</span>
+  </div>
+  <!-- Cookie Game Button -->
+  <button class="cookie-game-btn" onclick="location.href='cookigame.html'">Go to Cookie Clicker Game</button>
+</section>
 
-    <div class="Mobile">
-    <div class="topstuff">
-      <div class="mobileButton">
-      <a href="https://linkedin.com/in/lukas-kelk-682bb722b" target="_blank" rel="noopener noreferrer"> 
-        <button class="mBut">Linkedin</button></a>
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Lukas Kelk. All Rights Reserved.</p>
+</footer>
 
-      <a href="https://github.com/Lukas-k03" target="_blank" rel="noopener noreferrer"> 
-        <button class="mBut">Github</button> </a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Initialize or increment the visitor count in localStorage
+  if (!localStorage.getItem('visitCount')) {
+    localStorage.setItem('visitCount', 1);
+  } else {
+    let visitCount = parseInt(localStorage.getItem('visitCount'), 10);
+    localStorage.setItem('visitCount', visitCount + 1);
+  }
 
-      <a href="https://lukaskelk.com/Projects" target="_blank" rel="noopener noreferrer">
-       <button class="mBut">Projects</button> </a>
-
-      <a href="file:///C:/Users/lukas/Documents/GitHub/lukas-k03.github.io/LukasKelkResume.pdf" target="_blank" rel="noopener noreferrer"> 
-        <button class="mBut">Resume</button> </a>
-
-      <!-- <a href="https://instagram.com/kelkmusic?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer" > 
-        <button class = "mBut">Music</button> </a>  -->
-      </div>
-      <div class="mTexttop">
-        <div><p class="sText2">Hi! I'm Lukas Kelk</p></div>
-
-      </div>
-
-      </div>
-        <div class="mImg">
-          <img class="mImg1" src="./index_files/me.jpg">
-         </div>
-      
-    </div>
-  
-</body></html>
+  // Display the visitor count
+  document.getElementById('visitorCount').textContent = localStorage.getItem('visitCount');
+</script>
+</body>
+</html>
